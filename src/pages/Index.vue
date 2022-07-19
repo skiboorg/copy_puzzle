@@ -9,14 +9,13 @@
 
           <div  class="index-left flex column items-start justify-between">
             <div  class=" ">
-              <h1 class="text-white">我们一起赚钱！</h1>
-              <h3 class="text-white  q-mb-sm">该系统遵循双方共同利益的原则！</h3>
-              <p class="text-grey-6 text-body1 no-margin">We work, you collect, we earn together!</p>
-              <p class="text-grey-6 text-caption">The system works on the principle of mutual interest of the parties!</p>
+              <p class="text-white text-h4">Мы работаем, вы собираете, мы зарабатываем вместе！</p>
+
+              <p class="text-grey-6 text-caption">Система работает по принципу взаимной заинтересованности сторон!</p>
             </div>
             <div class="row column index_bottom gt-sm">
-              <p class="text-white text-body1 q-mb-sm">用于广告和合作伙伴的邮件<br>info@puzpayz.com</p>
-              <p class="text-grey-6 text-caption">Email for advertisment and partners</p>
+              <p class="text-white text-body1 q-mb-sm">info@puzpayz.com</p>
+              <p class="text-grey-6 text-caption">Электронная почта для рекламы и партнеров</p>
             </div>
           </div>
 
@@ -32,15 +31,15 @@
             <path d="M123.139 25.1036C124.301 23.9223 124.285 22.0228 123.104 20.8611L103.853 1.92895C102.672 0.767179 100.773 0.783007 99.6108 1.9643C98.449 3.1456 98.4648 5.04503 99.6461 6.2068L116.758 23.0354L99.929 40.1467C98.7672 41.328 98.783 43.2275 99.9643 44.3892C101.146 45.551 103.045 45.5352 104.207 44.3539L123.139 25.1036ZM1.025 26.9999L121.025 25.9999L120.975 20.0001L0.975001 21.0001L1.025 26.9999Z" fill="white"/>
             </svg>
 
-              <p class="no-margin">登录或注册<br>
-                <span> SIGN IN OR SIGN UP</span>
+              <p>
+                <span>ВОЙТИ ИЛИ ЗАРЕГИСТРИРОВАТЬСЯ</span>
 
               </p>
             </div>
           </div>
           <div class="row text-grey-6 column q-gutter-sm lt-sm">
-                <p class="text-white text-body1 q-mb-sm">用于广告和合作伙伴的邮件： info@puzpayz.com</p>
-              <p class="text-grey-6 text-caption">Email for advertisment and partners</p>
+                <p class="text-white text-body1 q-mb-sm">info@puzpayz.com</p>
+              <p class="text-grey-6 text-caption">Электронная почта для рекламы и партнеров</p>
 
             </div>
 

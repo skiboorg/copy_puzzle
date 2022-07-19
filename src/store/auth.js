@@ -32,7 +32,7 @@ const actions = {
     }catch (e){
       console.log(e)
       Notify.create({
-        message:'Unable to log in with provided credentials.',
+        message:'Невозможно войти с предоставленными учетными данными.',
         color:'red',
         position: Screen.lt.sm ? 'bottom' : 'bottom-right',
       })

@@ -1,6 +1,6 @@
 <template>
   <div class="static-page-wrapper">
-    <h1 class="text-h4 text-weight-bold">{{$t('contacts_title')}}</h1>
+    <h1 class="text-h4 text-weight-bold">Контакты</h1>
     <p class="text-grey-8" v-html="$t('contacts_info')"></p>
 
     <h3 class="text-h4 text-weight-bold">{{$t('contacts_form_title')}}</h3>

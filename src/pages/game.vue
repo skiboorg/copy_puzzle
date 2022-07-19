@@ -7,7 +7,7 @@
              id="timer">00:00</div>
         <div v-else></div>
         <p class="no-margin text-bold text-caption text-uppercase cursor-pointer"
-           @click="resetGame">back to games</p>
+           @click="resetGame">назад</p>
 
 
       </div>
@@ -59,7 +59,7 @@
       <div  class="flex column items-center justify-center q-mt-sm">
         <div v-if="sliderStart" class="text-bold text-h5 text-uppercase q-px-lg" id="timer_slider">00:00</div>
         <div v-else></div>
-        <p class="no-margin text-bold text-caption text-uppercase cursor-pointer" @click="resetGame">back to games</p>
+        <p class="no-margin text-bold text-caption text-uppercase cursor-pointer" @click="resetGame">назад</p>
         <p v-if="sliderStart" class="no-margin text-bold text-caption text-uppercase ">+10 {{$t('rating_title')}}</p>
       </div>
       <div class="slider-area mb-50">
@@ -90,14 +90,14 @@
               @before-hide="closeAd">
       <q-card style="width: 700px; max-width: 80vw;">
         <q-card-section class="row items-center q-pb-none relative-position">
-          <div v-if="gameWin" class="text-h6 text-positive text-uppercase text-center full-width">You WIN!</div>
-          <div v-else class="text-h6 text-red text-uppercase text-center full-width">TRY AGAIN!</div>
+          <div v-if="gameWin" class="text-h6 text-positive text-uppercase text-center full-width">Победа!</div>
+          <div v-else class="text-h6 text-red text-uppercase text-center full-width">Попробуйте еще раз!</div>
           <q-space/>
           <q-btn v-if="showClose" icon="close" flat round dense v-close-popup class="absolute-top-right" />
           <span v-else id="time_to_close" class="text-weight-bold absolute-top-right">00:{{counter | correct_seconds}}</span>
         </q-card-section>
         <q-card-section>
-          <p v-if="$user.loggedIn" style="max-width: 350px;margin: 0 auto 20px" class="text-center">If you close this window before you look ads - we will subtract your rating for the game</p>
+          <p v-if="$user.loggedIn" style="max-width: 350px;margin: 0 auto 20px" class="text-center">Если вы закроете это окно перед просмотром рекламы - мы вычтем ваш рейтинг за игру</p>
           <div v-show="currentAd.image" class="">
             <q-img :src="currentAd.image"/>
           </div>

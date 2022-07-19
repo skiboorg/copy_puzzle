@@ -102,12 +102,12 @@
           <q-item-section>{{$t('menu_feedback')}}</q-item-section>
         </q-item>
 
-        <q-item clickable to="/documents">
-          <q-item-section avatar>
-            <q-icon color="white" name="description" />
-          </q-item-section>
-          <q-item-section class="text-uppercase">{{$t('documents_title')}}</q-item-section>
-        </q-item>
+<!--        <q-item clickable to="/documents">-->
+<!--          <q-item-section avatar>-->
+<!--            <q-icon color="white" name="description" />-->
+<!--          </q-item-section>-->
+<!--          <q-item-section class="text-uppercase">{{$t('documents_title')}}</q-item-section>-->
+<!--        </q-item>-->
 
         <q-item clickable to="/contacts">
           <q-item-section avatar>
@@ -117,24 +117,24 @@
           <q-item-section>{{$t('menu_contacts')}}</q-item-section>
         </q-item>
 
-        <q-separator spaced="md" dark/>
-        <q-btn-dropdown flat unelevated color="white" icon="language" :label="$t('menu_language')">
-          <q-list>
-            <q-item clickable v-close-popup @click="lang='en-us'">
-              <q-item-section>
-                <q-item-label>English</q-item-label>
-              </q-item-section>
-            </q-item>
+<!--        <q-separator spaced="md" dark/>-->
+<!--        <q-btn-dropdown flat unelevated color="white" icon="language" :label="$t('menu_language')">-->
+<!--          <q-list>-->
+<!--            <q-item clickable v-close-popup @click="lang='en-us'">-->
+<!--              <q-item-section>-->
+<!--                <q-item-label>English</q-item-label>-->
+<!--              </q-item-section>-->
+<!--            </q-item>-->
 
-            <q-item clickable v-close-popup @click="lang='cn'">
-              <q-item-section>
-                <q-item-label>{{$t('menu_lang_ch')}}</q-item-label>
-              </q-item-section>
-            </q-item>
+<!--            <q-item clickable v-close-popup @click="lang='cn'">-->
+<!--              <q-item-section>-->
+<!--                <q-item-label>{{$t('menu_lang_ch')}}</q-item-label>-->
+<!--              </q-item-section>-->
+<!--            </q-item>-->
 
 
-          </q-list>
-        </q-btn-dropdown>
+<!--          </q-list>-->
+<!--        </q-btn-dropdown>-->
 
       </q-list>
     </q-drawer>
@@ -213,12 +213,12 @@
           </q-item-section>
           <q-item-section>{{$t('menu_feedback')}}</q-item-section>
         </q-item>
-         <q-item clickable to="/documents">
-          <q-item-section avatar>
-            <q-icon color="white" name="description" />
-          </q-item-section>
-          <q-item-section class="text-uppercase">{{$t('documents_title')}}</q-item-section>
-        </q-item>
+<!--         <q-item clickable to="/documents">-->
+<!--          <q-item-section avatar>-->
+<!--            <q-icon color="white" name="description" />-->
+<!--          </q-item-section>-->
+<!--          <q-item-section class="text-uppercase">{{$t('documents_title')}}</q-item-section>-->
+<!--        </q-item>-->
         <q-item clickable to="/contacts">
           <q-item-section avatar>
 
@@ -227,24 +227,24 @@
           <q-item-section>{{$t('menu_contacts')}}</q-item-section>
         </q-item>
 
-        <q-separator spaced="md" dark/>
-        <q-btn-dropdown flat unelevated color="white" icon="language" :label="$t('menu_language')">
-          <q-list>
-            <q-item clickable v-close-popup @click="lang='en-us'">
-              <q-item-section>
-                <q-item-label>English</q-item-label>
-              </q-item-section>
-            </q-item>
+<!--        <q-separator spaced="md" dark/>-->
+<!--        <q-btn-dropdown flat unelevated color="white" icon="language" :label="$t('menu_language')">-->
+<!--          <q-list>-->
+<!--            <q-item clickable v-close-popup @click="lang='en-us'">-->
+<!--              <q-item-section>-->
+<!--                <q-item-label>English</q-item-label>-->
+<!--              </q-item-section>-->
+<!--            </q-item>-->
 
-            <q-item clickable v-close-popup @click="lang='cn'">
-              <q-item-section>
-                <q-item-label>{{$t('menu_lang_ch')}}</q-item-label>
-              </q-item-section>
-            </q-item>
+<!--            <q-item clickable v-close-popup @click="lang='cn'">-->
+<!--              <q-item-section>-->
+<!--                <q-item-label>{{$t('menu_lang_ch')}}</q-item-label>-->
+<!--              </q-item-section>-->
+<!--            </q-item>-->
 
 
-          </q-list>
-        </q-btn-dropdown>
+<!--          </q-list>-->
+<!--        </q-btn-dropdown>-->
 
       </q-list>
 

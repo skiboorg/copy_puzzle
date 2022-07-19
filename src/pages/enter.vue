@@ -13,8 +13,8 @@
       v-model="userData.email"
       :label="$t('email')"
       lazy-rules
-      :rules="[ val => val && val.length > 0 || 'Please type email',
-      val => email_re.test(String(val)) || 'Please type correct email'
+      :rules="[ val => val && val.length > 0 || 'Это обязательное поле',
+      val => email_re.test(String(val)) || 'Это обязательное поле'
       ]"/>
       <q-input
       filled
@@ -22,7 +22,7 @@
       v-model="userData.nickname"
       :label="$t('nickname')"
       lazy-rules
-      :rules="[ val => val && val.length > 0 || 'Please type something']"/>
+      :rules="[ val => val && val.length > 0 || 'Это обязательное поле']"/>
       <q-input
       filled
       :dense="!$q.screen.gt.md"
@@ -30,8 +30,8 @@
       type="number"
       :label="$t('age')"
       lazy-rules
-      :rules="[ val => val && val.length > 0 || 'Please type your age']"/>
-      <q-select class="q-mb-lg" filled :dense="!$q.screen.gt.md" v-model="userData.sex" :options="sex_options" label="Sex" />
+      :rules="[ val => val && val.length > 0 || 'Это обязательное поле']"/>
+      <q-select class="q-mb-lg" filled :dense="!$q.screen.gt.md" v-model="userData.sex" :options="sex_options" label="Пол" />
 
 
       <q-input
@@ -41,7 +41,7 @@
       :label="$t('password')"
       :type="isPwd ? 'password' : 'text'"
       lazy-rules
-      :rules="[ val => val && val.length >= 4|| 'Password must at least 4 letters']">
+      :rules="[ val => val && val.length >= 4|| 'Пароль дорлжен быть не менее 4х сисволов']">
         <template v-slot:append>
           <q-icon
             :name="isPwd ? 'visibility_off' : 'visibility'"
@@ -57,7 +57,7 @@
       :type="isPwd ? 'password' : 'text'"
       :label="$t('password_repeat')"
       lazy-rules
-      :rules="[ val => val && val===this.userData.password1 || 'Passwords not match']">
+      :rules="[ val => val && val===this.userData.password1 || 'Пароли не совпадают']">
         <template v-slot:append>
           <q-icon
             :name="isPwd ? 'visibility_off' : 'visibility'"
@@ -69,16 +69,9 @@
 
       <div class="flex items-center">
          <q-toggle v-model="accept"  />
-        <p class="no-margin">I accept the <a href="/contract_offer.docx">license and terms</a></p>
+        <p class="no-margin text-caption">Я согласен с <a href="/contract_offer.docx">условиями пользования</a></p>
       </div>
-      <div class="flex items-center">
-         <q-toggle v-model="accept1"  />
-        <p class="no-margin">I accept the <a href="/user_agreement.docx">user agreement</a></p>
-      </div>
-      <div class="flex items-center">
-         <q-toggle v-model="accept2"  />
-        <p class="no-margin">I accept the <a href="/privacy_policy.docx">privacy policy</a></p>
-      </div>
+
 
 
 
@@ -144,8 +137,8 @@ export default {
       name: null,
       age: null,
       accept: false,
-      accept1: false,
-      accept2: false,
+      accept1: true,
+      accept2: true,
       is_register:false,
       isPwd: true,
       lang: this.$i18n.locale,
@@ -155,7 +148,7 @@ export default {
         password:'123',
       },
       sex_options:[
-        'Male', 'Female'
+        'Мужской', 'Женский'
       ],
       userData:{
        password1:null,
