@@ -1,0 +1,30 @@
+@font-face
+  font-family: msyh
+  src: url(../assets/chinese.msyh.ttf)
+
+
+
+.font-msyh
+  font-family: 'msyh', sans-serif
+
+
+body
+  overscroll-behavior: contain
+  font-family: 'msyh', sans-serif
+.container
+  max-width: 1200px
+  margin: 0 auto
+  padding: 0 10px
+.static-page-wrapper
+  padding: 60px 90px
+  user-select: text
+  p
+    font-size: 14px
+.user-card
+  background: $user-card
+  color: #fff
+@media (max-width: 1023px)
+  .static-page-wrapper
+    padding: 0
+  .fullscreen
+    overflow-y: auto
